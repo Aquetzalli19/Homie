@@ -4,25 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;1,400&family=Secular+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <i><img src="img/LogoMedium.png" alt=""></i>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </nav>
-        <div class="button_contacto">
-            <a href=""></a>
+   <section class="header">
+    <nav class="navbar">
+        <img src="img/LogoMedium.png" alt="" class="logo">
+        <div class="menu">
+            <ul>
+                <li><a href="">¿Quienes somos?</a></li>
+                <li><a href="">Propiedades</a></li>
+                <li><a href="">Redes sociales</a></li>
+            </ul>
         </div>
-    </header>
+        <div class="buttons">
+            <button class="boton">Contactanos</button>
+            <button class="boton">Mi cuenta</button>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <section class="header__section">
+        <div class="left-side">
+            <h1>¿Pensando en Comprar un Inmbueble?</h1>
+            <p>Somos una agencia inmobiliaria dedicada a brindar soluciones a clientes en el territorio Mexicano en el mercado de bienes raíces. Con especialización en entender las necesidades y deseos de nuestros compradores.</p>
+            <button class="boton">Agendar Visita</button>
+        </div>
+        <div class="right-side">
+        </div>
+    </section>
+
+   </section>
+   <section>
+        <div class="filter_container">
+            <img src="./img/icon1.png" alt="">
+            <form class="form-filter">
+                <div class="block-filter">
+                    <label for="">Localización</label>
+                    <input type="text" placeholder="Ecribe aqui">
+                </div>
+                <div class="block-filter">
+                    <label for="">Tipo de propiedad</label>
+                    <input type="text" placeholder="Escribe aqui">
+                </div>
+                <div class="block-filter">
+                    <label for="">Precio</label>
+                    <input type="number" placeholder="xxxxxxxxx">
+                </div>
+            </form>
+            <input type="submit" value="Buscar" class="boton" style="height: 55px;">
+        </div>
+
+   </section>
+
+   <!-- SRCRIPTS -->
+    <script src="js/animation.js"></script>
+    <script src="https://kit.fontawesome.com/699c67a767.js" crossorigin="anonymous"></script>
 </body>
 </html>
