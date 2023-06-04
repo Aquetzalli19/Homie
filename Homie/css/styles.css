@@ -16,9 +16,35 @@ body {
     padding: 0;
 }
 .header{
+    margin: auto;
     background-image: url(../img/backgroung1.jpeg);
-    height: 43.29rem;
+    max-width: 1280px;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+.QuienesSomos{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-image: url(../img/bg2.jpeg);
+    max-width: 1280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.filosofia{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+}
+.propiedades-main{
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 90px;
+    background-image: url(../img/bg3.png);
 }
 
 .navbar {
@@ -152,21 +178,217 @@ li a{
     border: none;
     border-radius: 15.375px;
 }
+/* QUIENES SOMOS */
 
+.containerQuienes{
+    display: flex;
+    flex-flow: column;
+    max-width: 670px;
+    margin-top: 130px;
+    margin-left: 310px;
+    padding-bottom: 260px;
+}
+.containerQuienes b{
+    color: #000099;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: var(--font3);
+    text-transform: capitalize;
+}
+.containerQuienes h2{
+    color: #000;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+}
 
-@media (min-width: 768px) {
-    .navbar .logo,
-    .navbar .menu,
-    .navbar .buttons {
-        display: block;
-    }
+.containerQuienes h2 span{
+    color: #0000DB;
+    font-weight: 800;
+    font-size: 50px;
+}
+.containerQuienes p{
+    color: #73838C;
+    font-weight: 400;
+    font-size: 20px;
+}
 
-    .navbar .hamburger {
-        display: none;
-    }
+/* FILOSOFIA */
+.filosofia b{
+    color: #000099;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: var(--font3);
+    text-transform: capitalize;
+}
+.filosofia h2{
+    color: #000;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+.filosofia h2 span{
+    color: #0000DB;
+    font-weight: 800;
+    font-size: 50px;
+}
+.container__cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 
-    .navbar .menu ul {
-        display: flex;
-        gap: 20px;
-    }
+}
+
+.card_mainPage-alter{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 275px;
+    background: #0000DB;
+    box-shadow: 1px 9px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+.card_mainPage{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 275px;
+    background: #FFFFFF;
+    box-shadow: 1px 9px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+.card_mainPage p{
+    padding: 10px;
+    color: #666666;
+    font-size: 20px;
+    font-weight: 300;
+}
+.card_mainPage-alter p{
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+}
+.card__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 71px;
+    border-radius: 50%;
+    background: #F1F3F3;
+}
+
+/* PROPIEDADES */
+
+.propiedades-main B{
+    color: #000099;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: var(--font3);
+    text-transform: capitalize;
+}
+.propiedades-main h2{
+    color: #000;
+    margin: 0;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: capitalize;
+    padding: 0;
+}
+.propiedades-main h2 span{
+    color: #0000DB;
+    font-weight: 800;
+    font-size: 50px;
+}
+.propiedades-main p{
+    color: #666666;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+}
+.header__propiededs-main{
+    display: flex;
+}
+.content-header{
+    max-width:970px;
+    display: flex;
+    flex-direction: column;
+}
+.boton-propiedades{
+    margin: auto;
+    padding:  15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background: #000099;
+    border-radius: 20px;
+}
+.container__cards-propiedes{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.card-propiedad{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 445px;
+    background: #FFFFFF;
+    box-shadow: 1px 9px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    
+}
+.card-propiedad img{
+    margin: auto;
+    width: 300px;
+}
+.card-propiedad span{
+    display: block;
+    margin-left: 60%;
+    padding: 10px;
+    font-family: var(--font3);
+    font-size: 25px;
+    font-weight: 700;
+}
+.info-propiedad{
+    display: flex;
+    flex-flow: column;
+}
+.cant-cuartos{
+    display: flex;
+    width: 60px;
+    flex-direction: row-reverse;
+}
+.cant-cuartos img{
+    width: 33px;
+    height: 33px;
+}
+.cant-bathroms{
+    display: flex;
+    width: 60px;
+    flex-direction: row-reverse;
+}
+.cant-bathroms img{
+    width: 33px;
+    height: 33px;
+}
+.info-propiedad b{
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.info-propiedad p{
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+    text-transform: capitalize;
 }
